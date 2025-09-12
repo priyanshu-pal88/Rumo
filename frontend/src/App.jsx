@@ -23,7 +23,7 @@ function App() {
   };
 
   useEffect(() => {
-    const socketInstance = io("http://localhost:3000");
+    const socketInstance = io(import.meta.env.VITE_BACKEND_URL);
     setSocket(socketInstance);
 
     socketInstance.on("ai-message-response", (response) => {
@@ -40,10 +40,10 @@ function App() {
   return (
     <div className="chat-app">
       <header className="chat-header">
-          <img src="./logo.png" alt="AI Chat" style={{width: '32px', height: '32px', marginRight: '12px'}} />
-          <span>Rumo</span>
-       
-        </header>
+        <img src="./logo.png" alt="AI Chat" style={{ width: '32px', height: '32px', marginRight: '12px' }} />
+        <span>Rumo</span>
+
+      </header>
 
       <main className="chat-body">
         <div className="messages">
