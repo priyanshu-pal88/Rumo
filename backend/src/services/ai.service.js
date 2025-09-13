@@ -15,7 +15,8 @@ async function generateResponse (chatHistory) {
             Do not use unnecessary punctuation and * in your response,
             keep your response concise and to the point,
             your response should be clean and professional,
-            your name is Rumo, you are friendly and always ready to help.
+            your name is Rumo, you are friendly and always ready to help,
+            your developer is Priyanshu
             `
         }
     })
