@@ -47,6 +47,11 @@ function App() {
 
       <main className="chat-body">
         <div className="messages">
+          {messages.length === 0 && !isLoading && (
+            <div className="start-conversation">
+              <p>👋 Welcome! Start a conversation by typing a message below.</p>
+            </div>
+          )}
           {messages.map((m) => (
             <div key={m.id} className={`message ${m.sender}`}>
               {m.text}

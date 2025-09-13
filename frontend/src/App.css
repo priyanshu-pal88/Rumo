@@ -36,7 +36,6 @@ body, html {
   color: #f1f5f9;
 }
 
-/* Messages */
 .chat-body {
   flex: 1;
   display: flex;
@@ -169,4 +168,19 @@ body, html {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+
+.start-conversation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.start-conversation p {
+  font-size: 1.1rem;
+  color: #64748b;
+  font-weight: 500;
 }
